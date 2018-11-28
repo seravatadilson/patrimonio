@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assets Manager - reserva</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap4/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/estilo.css" >
+</head>
+<body>
+
+<!-- Barra de Navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><span class="img-logo">Assets Manager</span></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#togglenavbar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Alternar navegação</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="togglenavbar" class="navbar-collapse collapse">
+            <ul class="nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">sobre</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="menudrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">reserva</a>
+                    <div class="dropdown-menu" aria-labelledby="menudrop">
+                        <a class="dropdown-item" href="auditorio-form.html">Auditório</a>
+                        <a class="dropdown-item" href="miniauditorio-form.html">Mini Auditório</a>
+                        <a class="dropdown-item" href="saladereuniao-form.html">Sala de Reunião</a>
+                        <a class="dropdown-item" href="transporte-form.html">Transporte</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Comunicação Interna</a></li>
+
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#">fale conosco</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Conteúdo -->
+
+<div class="container conteudo">
+    <div class="row form-titulo">
+        <div class="col-md-12 form-text-titulo">
+            <h2>Reserva de Transporte</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="setor">Unidade/Setor Requisitante</label>
+                        <select class="form-control custom-select" id="setor" placeholder="Selecione o setor">
+                            <option name="">Diretoria</option>
+                            <option name="">Coordenação Acadêmica</option>
+                            <option name="">Coordenação de Cursos</option>
+                            <option name="">Patrimônio</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="passageiros">Número de Passageiros</label>
+                        <input type="text" class="form-control" id="passageiros" placeholder="Digite o número de passageiros">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="responsável">Nome do responsável pela viagem</label>
+                        <input type="text" class="form-control" id="responsável" placeholder="Nome do responsável">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="telefone">Contato do Responsável</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="(92) xxxxx-xxxx">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="finalidade">Finalidade</label>
+                        <textarea class="form-control" id="finalidade" placeholder="Qual a finalidade?"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="local-saida">Local de saída</label>
+                        <input type="text" class="form-control" id="local-saida" placeholder="Origem">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="data-saida">Data de saída</label>
+                        <input class="form-control" type="date" id="data-saida">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="data-retorno">Data de Retorno</label>
+                        <input class="form-control" type="date" id="data-retorno">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="destino">Destino</label>
+                        <input type="text" class="form-control" id="destino" placeholder="Destino">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 form-float">
+                            <label for="hora-saida">Hora de saída</label>
+                            <select class="form-control custom-select" id="hora-saida">
+                                <option name="">08:00</option>
+                                <option name="">08:30</option>
+                                <option name="">09:00</option>
+                                <option name="">09:30</option>
+                                <option name="">10:00</option>
+                                <option name="">10:30</option>
+                                <option name="">11:00</option>
+                                <option name="">11:30</option>
+                                <option name="">12:00</option>
+                                <option name="">12:30</option>
+                                <option name="">13:00</option>
+                                <option name="">13:30</option>
+                                <option name="">14:00</option>
+                                <option name="">14:30</option>
+                                <option name="">15:00</option>
+                                <option name="">15:30</option>
+                                <option name="">16:00</option>
+                                <option name="">16:30</option>
+                                <option name="">17:00</option>
+                                <option name="">17:30</option>
+                                <option name="">18:00</option>
+                                <option name="">18:30</option>
+                                <option name="">19:00</option>
+                                <option name="">19:30</option>
+                                <option name="">20:00</option>
+                                <option name="">20:30</option>
+                                <option name="">21:00</option>
+                                <option name="">21:30</option>
+                                <option name="">22:00</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 form-float">
+                            <label for="hora-retorno">Hora de retorno</label>
+                            <select class="form-control custom-select" id="hora-retorno">
+                                <option name="">08:00</option>
+                                <option name="">08:30</option>
+                                <option name="">09:00</option>
+                                <option name="">09:30</option>
+                                <option name="">10:00</option>
+                                <option name="">10:30</option>
+                                <option name="">11:00</option>
+                                <option name="">11:30</option>
+                                <option name="">12:00</option>
+                                <option name="">12:30</option>
+                                <option name="">13:00</option>
+                                <option name="">13:30</option>
+                                <option name="">14:00</option>
+                                <option name="">14:30</option>
+                                <option name="">15:00</option>
+                                <option name="">15:30</option>
+                                <option name="">16:00</option>
+                                <option name="">16:30</option>
+                                <option name="">17:00</option>
+                                <option name="">17:30</option>
+                                <option name="">18:00</option>
+                                <option name="">18:30</option>
+                                <option name="">19:00</option>
+                                <option name="">19:30</option>
+                                <option name="">20:00</option>
+                                <option name="">20:30</option>
+                                <option name="">21:00</option>
+                                <option name="">21:30</option>
+                                <option name="">22:00</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="passageiro">Nome do passageiro(a) - 1</label>
+                        <input type="text" class="form-control" id="passageiro" placeholder="Nome do passageiro(a)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="regpassageiro">Registro do Passageiro (Siape/CPF)</label>
+                        <input type="text" class="form-control" id="regpassageiro" placeholder="Número do SIAPE ou CPF">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div><label for="file">Arquivo do seguro</label></div>
+                    <div class="form-group">
+                        <label for="file" class="custom-file">
+                            <input type="file" id="file" class="custom-file-input">
+                            <span class="custom-file-control">Indique o local do arquivo</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="passageiro2">Nome do passageiro(a) - 2</label>
+                        <input type="text" class="form-control" id="passageiro2" placeholder="Nome do passageiro(a)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="regpassageiro2">Registro do Passageiro (Siape/CPF)</label>
+                        <input type="text" class="form-control" id="regpassageiro2" placeholder="Número do SIAPE ou CPF">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div><label for="file2">Arquivo do seguro</label></div>
+                    <div class="form-group">
+                        <label for="file2" class="custom-file">
+                            <input type="file" id="file2" class="custom-file-input">
+                            <span class="custom-file-control">Indique o local do arquivo</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="passageiro3">Nome do passageiro(a) - 3</label>
+                        <input type="text" class="form-control" id="passageiro3" placeholder="Nome do passageiro(a)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="regpassageiro3">Registro do Passageiro (Siape/CPF)</label>
+                        <input type="text" class="form-control" id="regpassageiro3" placeholder="Número do SIAPE ou CPF">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div><label for="file3">Arquivo do seguro</label></div>
+                    <div class="form-group">
+                        <label for="file3" class="custom-file">
+                            <input type="file" id="file3" class="custom-file-input">
+                            <span class="custom-file-control">Indique o local do arquivo</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="passageiro4">Nome do passageiro(a) - 4</label>
+                        <input type="text" class="form-control" id="passageiro4" placeholder="Nome do passageiro(a)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="regpassageiro4">Registro do Passageiro (Siape/CPF)</label>
+                        <input type="text" class="form-control" id="regpassageiro4" placeholder="Número do SIAPE ou CPF">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div><label for="file4">Arquivo do seguro</label></div>
+                    <div class="form-group">
+                        <label for="file4" class="custom-file">
+                            <input type="file" id="file4" class="custom-file-input">
+                            <span class="custom-file-control">Indique o local do arquivo</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="veiculo">Veículo</label>
+                        <select class="form-control custom-select" id="veiculo" placeholder="Selecione o veículo">
+                            <option name="">Ranger</option>
+                            <option name="">L200</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="placa">Placa</label>
+                        <input type="text" class="form-control" id="placa" placeholder="placa do veículo" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="motorista">Motorista</label>
+                        <select class="form-control custom-select" id="motorista" placeholder="Selecione o motorista">
+                            <option name="">Fulano</option>
+                            <option name="">Ciclano</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="placa">Placa</label>
+                        <input type="text" class="form-control" id="Carteira de Habilitação" placeholder="CNH" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="km-saida">Km de saída</label>
+                        <input type="text" class="form-control" id="km-saida" placeholder="km de saída">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="km-retorno">Km de retorno</label>
+                        <input type="text" class="form-control" id="km-retorno" placeholder="km de retorno">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="data-solicitacao">Data da solicitação</label>
+                        <p id="data-solicitacao">23 de setembro de 2017.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="hora-solicitacao">Hora da Solicitação</label>
+                        <p id="hora-solicitacao">08:45</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="status-solicitacao">Status da solicitação</label>
+                        <p id="status-solicitacao" class="text-primary">Em aberto</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="auth">Autenticação automática</label>
+                        <p id="auth">asdasdasd</p>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Solicitar</button>
+            <button type="reset" class="btn btn-light">Cancelar</button>
+        </form>
+        </div>
+    </div>
+</div>
+<!-- Rodapé -->
+<footer>
+
+    <p>&copy;Todos os direitos reservados</p>
+
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="bootstrap4/assets/js/vendor/jquery-slim.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    });
+</script>
+<script src="bootstrap4/assets/js/vendor/popper.min.js"></script>
+<script src="bootstrap4/dist/js/bootstrap.min.js" ></script>
+</body>
+</html>

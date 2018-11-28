@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assets Manager - home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap4/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/estilo.css" >
+</head>
+<body>
+
+<!-- Barra de Navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><span class="img-logo">Assets Manager</span></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#togglenavbar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Alternar navegação</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="togglenavbar" class="navbar-collapse collapse">
+            <ul class="nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">home</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">sobre</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="menudrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">reserva</a>
+                    <div class="dropdown-menu" aria-labelledby="menudrop">
+                        <a class="dropdown-item" href="auditorio-form.html">Auditório</a>
+                        <a class="dropdown-item" href="miniauditorio-form.html">Mini Auditório</a>
+                        <a class="dropdown-item" href="saladereuniao-form.html">Sala de Reunião</a>
+                        <a class="dropdown-item" href="transporte-form.html">Transporte</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Comunicação Interna</a></li>
+
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="faleconosco.html">fale conosco</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Conteúdo -->
+
+    <div class="container home-body">
+        <div class="col-md-12 home-text">
+            <img class="img-fluid" src="images/fundoufam.png">
+        </div>
+    </div>
+
+<!-- Rodapé -->
+<footer class="fixed-bottom">
+
+    <p>&copy;Todos os direitos reservados</p>
+
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="bootstrap4/assets/js/vendor/jquery-slim.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+<script src="bootstrap4/assets/js/vendor/popper.min.js"></script>
+<script src="bootstrap4/dist/js/bootstrap.min.js" ></script>
+</body>
+</html>

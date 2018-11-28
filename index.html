@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Patrimonio | ICET - login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap4/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/estilo.css" >
+</head>
+<body>
+
+<!-- Barra de Navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="img-logo">Patrimonio ICET</span></a>
+    </div>
+</nav>
+<!-- Conteúdo -->
+<div class="container">
+    <div class="row" style="margin-top: 80px;">
+        <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <h2>Logar</h2>
+                        <form class="form-index" action="bd/ValidaLogin.php" method="post">
+                            <div class="form-group">
+                                <label for="siape">Matrícula</label>
+                                <input type="text" class="form-control" id="siape" name="siape" required placeholder="Digite seu SIAPE">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control" id="senha" name="senha" required placeholder="Digite sua senha">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                            <a href="cadastro.php"> Novo Cadastro</a>
+                        </form>
+                    </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+<!-- Rodapé -->
+<footer class="fixed-bottom">
+
+    <p>&copy;Todos os direitos reservados</p>
+
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="bootstrap4/assets/js/vendor/jquery-slim.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+<script src="bootstrap4/assets/js/vendor/popper.min.js"></script>
+<script src="bootstrap4/dist/js/bootstrap.min.js" ></script>
+
+</body>
+</html>
